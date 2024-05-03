@@ -107,6 +107,7 @@ body {
 	padding-bottom: 1000px;
 }
 
+/* Header */
 header {
 	position: fixed;
 	width: 100%;
@@ -206,4 +207,56 @@ header .gnb .menuBox.on li:nth-child(3) a {
 
 header .gnb .menuBox.on li:nth-child(4) a {
 	transition-delay: 0.15s;
+}
+
+/* Visual */
+.visual .inner {
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	height: 100vh;
+	padding: 25px 50px 25px;
+	box-sizing: border-box;
+}
+
+.visual .inner .mainText {
+	max-width: fit-content;
+	font-size: 80px;
+	font-weight: normal;
+	line-height: 0.9;
+	letter-spacing: -2px;
+	margin-left: auto;
+}
+
+.visual .inner .mainText span {
+	display: block;
+	overflow: hidden;
+}
+
+.visual .inner .mainText span i {
+	display: block;
+}
+
+.visual .inner .subText {
+	font-weight: normal;
+	font-size: 20px;
+	align-self: flex-end;
+}
+
+.visual .inner .subText span {
+	display: inline-block;
+	color: #585858;
+	margin-bottom: 50px;
+}
+
+.visual .logoWrap {
+	display: flex;
+	justify-content: space-between;
+}
+
+.visual .logoWrap span {
+	width: 16%;
+}
+
+.visual .logoWrap span img {
+	width: 100%;
 }
