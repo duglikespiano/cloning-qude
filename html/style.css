@@ -349,6 +349,97 @@ header .gnb .menuBox.on li:nth-child(4) a {
 	opacity: 0;
 }
 
+/* Con2 */
+.con2 .inner {
+	position: relative;
+	padding: 40px 50px;
+}
+
+.con2 .inner::before {
+	content: '';
+	position: absolute;
+	width: 95%;
+	height: 1px;
+	top: 0;
+	left: 50%;
+	background-color: #3b3b3b;
+	transform: translateX(-50%);
+}
+
+.con2 .mainTextBox {
+	position: relative;
+}
+
+.con2 .mainTextBox span {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+.con2 .mainTextBox .in {
+	display: flex;
+	justify-content: flex-end;
+	margin-bottom: 15px;
+}
+
+.con2 .mainTextBox .in .box {
+	max-width: 550px;
+	margin-right: 20px;
+}
+
+.con2 .mainTextBox .in .box video {
+	width: 100%;
+}
+
+.con2 .mainTextBox .title {
+	font-size: 120px;
+	line-height: 1;
+	letter-spacing: -5px;
+	text-align: right;
+	overflow: hidden;
+}
+
+.con2 .mainTextBox .title i {
+	display: block;
+}
+
+.con2 .mainTextBox .title.a {
+	align-self: flex-end;
+}
+
+.con2 .mainTextBox .title.b {
+	margin-right: 400px;
+}
+
+.con2 .subTextBox {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+.con2 .subTextBox .subText {
+	max-width: 600px;
+	font-size: 22px;
+}
+
+.con2 .subTextBox .subText p:nth-child(1) {
+	margin-bottom: 20px;
+}
+
+.con2 .subTextBox .iconbox {
+	display: flex;
+}
+
+.con2 .subTextBox .iconbox li {
+	width: 28px;
+	margin: 0 10px;
+	place-items: center;
+}
+
+.con2 .subTextBox .iconbox li:last-child {
+	width: 40px;
+}
+
 @keyframes opa {
 	0% {
 		opacity: 0;
