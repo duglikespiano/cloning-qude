@@ -37,5 +37,9 @@
 ### 3. 개발노트
 
 1. GNB(Global Navigation Bar)
+2. Visual
+3. Con1
+4. Con2
+5. Con3
    </br>
    </br>

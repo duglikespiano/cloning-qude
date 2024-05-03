@@ -440,6 +440,82 @@ header .gnb .menuBox.on li:nth-child(4) a {
 	width: 40px;
 }
 
+/* Con3 */
+.con3 .inner {
+	display: flex;
+	justify-content: space-between;
+}
+
+.con3 .textBox {
+	width: 28%;
+}
+
+.con3 .textBox h4 {
+	position: sticky;
+	position: -webkit-sticky;
+	top: 50%;
+	font-size: 60px;
+	font-weight: normal;
+	transform: translateY(-50%);
+}
+
+.con3 .listBox {
+	display: flex;
+	width: 70%;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	perspective: 900px;
+	/*ScrollTrigger때문에 스크롤바가 생기므로 적용*/
+	overflow: hidden;
+}
+
+.con3 .listBox li {
+	width: 32.2%;
+}
+
+.con3 .listBox li .img {
+	background-color: var(--sub-color);
+	border-radius: 10px;
+	text-align: center;
+	padding: 30% 0;
+}
+
+.con3 .listBox li .img img {
+	width: 40%;
+}
+
+.con3 .listBox li h4 {
+	display: flex;
+	justify-content: center;
+	justify-content: space-between;
+	margin: 15px 0 50px;
+	font-weight: normal;
+}
+
+.con3 .listBox li h4 span.b {
+	opacity: 0.5;
+}
+
+.con3 .listBox li[data-color='a'] {
+	--sub-color: #d1dbfd;
+}
+
+.con3 .listBox li[data-color='b'] {
+	--sub-color: #90c3cd;
+}
+
+.con3 .listBox li[data-color='c'] {
+	--sub-color: #ff764a;
+}
+
+.con3 .listBox li[data-color='d'] {
+	--sub-color: #47b172;
+}
+
+.con3 .listBox li[data-color='e'] {
+	--sub-color: #ffb84f;
+}
+
 @keyframes opa {
 	0% {
 		opacity: 0;
