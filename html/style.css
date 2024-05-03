@@ -1,0 +1,209 @@
+@charset "utf-8";
+
+/* 00. font - 구글폰트에서 Montserrat 300/400/600 가져옴 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;600&family=Noto+Sans+KR&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;500;600&display=swap');
+
+/* 00. Reset */
+* {
+	margin: 0;
+	padding: 0;
+}
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+	margin: 0;
+	padding: 0;
+}
+a {
+	color: inherit;
+	text-decoration: inherit;
+}
+li {
+	list-style: none;
+}
+address,
+em,
+i {
+	font-style: normal;
+}
+button {
+	background: none;
+	border: none;
+}
+img {
+	vertical-align: middle;
+}
+
+body {
+	font-family: 'Raleway', sans-serif;
+	font-size: 16px;
+	letter-spacing: -0.01em;
+}
+
+.wrap {
+	position: relative;
+	background-color: #141212;
+	color: #fff;
+	margin: 0 auto;
+	padding-bottom: 1000px;
+}
+
+header {
+	position: fixed;
+	width: 100%;
+	z-index: 10;
+}
+
+header .inner {
+	padding: 30px 50px 0;
+}
+
+header .inner .logo {
+	display: flex;
+	width: 150px;
+	justify-content: space-between;
+}
+
+header .inner .logo span {
+	padding: 0 1px;
+}
+
+header .inner .logo span img {
+	width: 100%;
+}
+
+header .gnb {
+	text-align: center;
+}
+
+header .gnb .menuOpen {
+	position: absolute;
+	top: 10px;
+	left: 50%;
+	font-size: 10px;
+	padding: 30px 0;
+	transform: translateX(-50%);
+	z-index: 1;
+	cursor: pointer;
+}
+
+header .gnb .menuOpen::before {
+	content: '';
+	position: absolute;
+	width: 150px;
+	height: 5px;
+	left: 50%;
+	top: 15px;
+	background-color: #fff;
+	border-radius: 30px;
+	transform: translateX(-50%);
+	transition: all 0.3s;
+}
+
+header .gnb .menuOpen:hover::before {
+	width: 165px;
+}
+
+header .gnb .menuBox {
+	position: absolute;
+	width: 99%;
+	top: -1000%;
+	left: 50%;
+	background-color: rgba(55, 55, 55, 0.4);
+	border-radius: 5px;
+	padding: 100px 0 30px;
+	transform: translateX(-50%);
+	transition: top 0.5s;
+	backdrop-filter: blur(30px);
+	box-sizing: border-box;
+}
+
+header .gnb .menuBox li {
+	overflow: hidden;
+}
+
+header .gnb .menuBox li a {
+	display: block;
+	font-size: 40px;
+	transform: translateY(-100px);
+	transition: all 0.6s;
+}
+
+header .gnb .menuBox.on {
+	top: 10px;
+}
+
+header .gnb .menuBox.on li a {
+	transform: translateY(0px);
+}
+
+header .gnb .menuBox.on li:nth-child(2) a {
+	transition-delay: 0.05s;
+}
+
+header .gnb .menuBox.on li:nth-child(3) a {
+	transition-delay: 0.1s;
+}
+
+header .gnb .menuBox.on li:nth-child(4) a {
+	transition-delay: 0.15s;
+}

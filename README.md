@@ -36,5 +36,6 @@
 
 ### 3. 개발노트
 
--   </br>
-    </br>
+1. GNB(Global Navigation Bar)
+   </br>
+   </br>
