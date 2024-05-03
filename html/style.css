@@ -632,6 +632,54 @@ header .gnb .menuBox.on li:nth-child(4) a {
 	margin-bottom: 20px;
 }
 
+/* Con5 */
+.con5 {
+	background-color: #fff;
+	color: #141412;
+	margin-bottom: 0;
+}
+
+.con5 .inner {
+	padding: 50px;
+}
+
+.con5 .mainTextBox h2 {
+	font-size: 100px;
+	letter-spacing: -5px;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+
+.con5 .listBox {
+	border-top: 1px solid #000;
+	margin-top: 150px;
+}
+
+.con5 .listBox li {
+	display: grid;
+	grid-template-columns: 2fr 1fr auto;
+	border-bottom: 1px solid #000;
+	padding: 10px 0;
+	cursor: pointer;
+}
+
+.con5 .listBox li h3 {
+	font-size: 40px;
+	letter-spacing: -1px;
+	font-weight: normal;
+}
+
+.con5 .listBox li p {
+	align-self: center;
+}
+
+.con5 .imgBox {
+	position: absolute;
+	transform: scale(0);
+	opacity: 0;
+	z-index: 2;
+}
+
 @keyframes opa {
 	0% {
 		opacity: 0;
