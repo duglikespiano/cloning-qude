@@ -36,13 +36,14 @@
 
 ### 3. 개발노트
 
-1. GNB(Global Navigation Bar)
-2. Visual
-3. Con1
-4. Con2
-5. Con3
-6. Con4
-7. Con5
-8. Footer
+1. GNB(Global Navigation Bar, HTML, CSS, Javscript)
+2. Visual(HTML, CSS)
+3. Con1(HTML, CSS)
+4. Con2(HTML, CSS)
+5. Con3(HTML, CSS)
+6. Con4(HTML, CSS)
+7. Con5(HTML, CSS)
+8. Footer(HTML, CSS)
+9. Visual(Javascript)
    </br>
    </br>
