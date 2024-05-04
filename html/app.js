@@ -89,9 +89,24 @@ window.onload = () => {
 					start: '100% 100%',
 					end: '100% 100%',
 					scrub: 1,
-					markers: true,
+					//markers: true,
 				},
 			})
 			.fromTo(item, { opacity: 0, y: 150 }, { opacity: 1, y: 0, ease: 'none' }, 0);
+	});
+
+	//04.subText p
+	gsap.utils.toArray('.subText p').forEach((item) => {
+		gsap
+			.timeline({
+				scrollTrigger: {
+					trigger: item,
+					start: '100% 100%',
+					end: '100% 100%',
+					scrub: 1,
+					markers: true,
+				},
+			})
+			.fromTo(item, { opacity: 0, y: 100 }, { opacity: 1, y: 0, ease: 'none' }, 0);
 	});
 };

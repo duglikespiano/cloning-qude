@@ -45,6 +45,7 @@
 7. Con5(HTML, CSS)
 8. Footer(HTML, CSS)
 9. Visual(Javascript)
-10. Maintitle(Javascript)
+10. Maintext(Javascript)
+11. Subtext(Javascript)
     </br>
     </br>
