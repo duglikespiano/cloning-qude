@@ -126,9 +126,33 @@ window.onload = () => {
 					start: '0% 20%',
 					end: '0% 0%',
 					scrub: 1,
-					markers: true,
+					// markers: true,
 				},
 			})
 			.to(element, { transform: 'rotateX(-10deg) scale(0.9)', transformOrigin: 'top', filter: 'brightness(0.3)' });
+	});
+
+	//07.con3
+	gsap.utils.toArray('.con3 .listBox li').forEach((element, i) => {
+		ScrollTrigger.create({
+			trigger: element,
+			start: '0% 50%',
+			end: '0% 50%',
+			markers: true,
+			onEnter: () => {
+				gsap.set(element, {
+					rotationX: '-65deg',
+					z: '-500px',
+					opacity: 0,
+				});
+				gsap.to(element, {
+					rotationX: 0,
+					z: 0,
+					opacity: 1,
+					delay: (i % 3) * 0.05,
+					duration: 0.3,
+				});
+			},
+		});
 	});
 };
