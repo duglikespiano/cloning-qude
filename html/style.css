@@ -106,6 +106,10 @@ body {
 	margin: 0 auto;
 }
 
+.wrap.on {
+	overflow: hidden;
+}
+
 /* Common Style */
 section {
 	margin-bottom: 150px;

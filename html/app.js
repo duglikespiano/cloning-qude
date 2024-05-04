@@ -138,7 +138,7 @@ window.onload = () => {
 			trigger: element,
 			start: '0% 50%',
 			end: '0% 50%',
-			markers: true,
+			// markers: true,
 			onEnter: () => {
 				gsap.set(element, {
 					rotationX: '-65deg',
@@ -154,5 +154,49 @@ window.onload = () => {
 				});
 			},
 		});
+	});
+
+	//08.con5
+	let listBox = document.querySelectorAll('.con5 .listBox li');
+	let imgBox = document.querySelector('.con5 .imgBox');
+	let img = document.querySelector('.con5 .imgBox img');
+
+	for (const [i, element] of listBox.entries()) {
+		element.addEventListener('mouseover', () => {
+			img.src = `image/img${i}.jpg`;
+			gsap.set(imgBox, {
+				scale: 0,
+				opacity: 0,
+			});
+			gsap.to(imgBox, {
+				scale: 1,
+				opacity: 1,
+				duration: 0.3,
+			});
+		});
+		element.addEventListener('mousemove', (event) => {
+			let imgBoxX = event.pageX + 20;
+			let imgBoxY = event.pageY - 20;
+			imgBox.style.left = imgBoxX + 'px';
+			imgBox.style.top = imgBoxY + 'px';
+		});
+		element.addEventListener('mouseout', (event) => {
+			gsap.to(imgBox, {
+				scale: 0,
+				opacity: 0,
+				duration: 0.3,
+			});
+		});
+	}
+	gsap.timeline({
+		scrollTrigger: {
+			trigger: '.con5',
+			start: '0% 100%',
+			end: '100% 0%',
+			toggleClass: {
+				targets: '.wrap',
+				className: 'on',
+			},
+		},
 	});
 };
