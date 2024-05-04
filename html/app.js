@@ -72,7 +72,7 @@ window.onload = () => {
 		.to(
 			'.logoWrap #g',
 			{
-				x: 50,
+				x: 10,
 				y: 450,
 				rotate: 20,
 				ease: 'none',
@@ -81,33 +81,33 @@ window.onload = () => {
 		);
 
 	//03.mainTextBox .title i
-	gsap.utils.toArray('.mainTextBox .title i').forEach((item) => {
+	gsap.utils.toArray('.mainTextBox .title i').forEach((element) => {
 		gsap
 			.timeline({
 				scrollTrigger: {
-					trigger: item,
+					trigger: element,
 					start: '100% 100%',
 					end: '100% 100%',
 					scrub: 1,
 					//markers: true,
 				},
 			})
-			.fromTo(item, { opacity: 0, y: 150 }, { opacity: 1, y: 0, ease: 'none' }, 0);
+			.fromTo(element, { opacity: 0, y: 150 }, { opacity: 1, y: 0, ease: 'none' }, 0);
 	});
 
 	//04.subText p
-	gsap.utils.toArray('.subText p').forEach((item) => {
+	gsap.utils.toArray('.subText p').forEach((element) => {
 		gsap
 			.timeline({
 				scrollTrigger: {
-					trigger: item,
+					trigger: element,
 					start: '100% 100%',
 					end: '100% 100%',
 					scrub: 1,
-					//markers: true,
+					// markers: true,
 				},
 			})
-			.fromTo(item, { opacity: 0, y: 100 }, { opacity: 1, y: 0, ease: 'none' }, 0);
+			.fromTo(element, { opacity: 0, y: 100 }, { opacity: 1, y: 0, ease: 'none' }, 0);
 	});
 
 	//05.con1
@@ -116,4 +116,19 @@ window.onload = () => {
 	for (let element of textAnimationList) {
 		textAnimation.to(element, { x: 0, opacity: 1, repeat: 1, duration: 0.8, delay: 0, yoyo: true, ease: 'power4.out' });
 	}
+
+	//06.con4
+	gsap.utils.toArray('.con4 .listBox .box').forEach((element) => {
+		gsap
+			.timeline({
+				scrollTrigger: {
+					trigger: element,
+					start: '0% 20%',
+					end: '0% 0%',
+					scrub: 1,
+					markers: true,
+				},
+			})
+			.to(element, { transform: 'rotateX(-10deg) scale(0.9)', transformOrigin: 'top', filter: 'brightness(0.3)' });
+	});
 };
