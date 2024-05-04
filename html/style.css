@@ -690,11 +690,13 @@ footer {
 }
 
 footer .inner {
+	position: relative;
 	display: flex;
 	height: 100vh;
 	flex-direction: column;
 	padding: 75px 75px 25px;
 	box-sizing: border-box;
+	z-index: 2;
 }
 
 footer .inner .box {

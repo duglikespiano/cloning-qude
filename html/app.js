@@ -199,4 +199,24 @@ window.onload = () => {
 			},
 		},
 	});
+
+	//09.footer
+	gsap
+		.timeline({
+			scrollTrigger: {
+				trigger: 'footer',
+				start: '0% 100%',
+				end: '100% 0%',
+				scrub: 1,
+				//markers: true,
+			},
+		})
+		.to(
+			'.logoWrap',
+			{
+				top: '20%',
+				ease: 'none',
+			},
+			0
+		);
 };
