@@ -16,7 +16,7 @@ window.onload = () => {
 				start: '100% 100%',
 				end: '100% 0%',
 				scrub: 1,
-				markers: true,
+				//markers: true,
 			},
 		})
 		.to(
@@ -79,4 +79,19 @@ window.onload = () => {
 			},
 			0
 		);
+
+	//03.mainTextBox .title i
+	gsap.utils.toArray('.mainTextBox .title i').forEach((item) => {
+		gsap
+			.timeline({
+				scrollTrigger: {
+					trigger: item,
+					start: '100% 100%',
+					end: '100% 100%',
+					scrub: 1,
+					markers: true,
+				},
+			})
+			.fromTo(item, { opacity: 0, y: 150 }, { opacity: 1, y: 0, ease: 'none' }, 0);
+	});
 };
