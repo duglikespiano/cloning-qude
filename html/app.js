@@ -104,9 +104,16 @@ window.onload = () => {
 					start: '100% 100%',
 					end: '100% 100%',
 					scrub: 1,
-					markers: true,
+					//markers: true,
 				},
 			})
 			.fromTo(item, { opacity: 0, y: 100 }, { opacity: 1, y: 0, ease: 'none' }, 0);
 	});
+
+	//05.con1
+	let textAnimationList = document.querySelectorAll('.con1 .textAni li');
+	let textAnimation = gsap.timeline({ repeat: -1 });
+	for (let element of textAnimationList) {
+		textAnimation.to(element, { x: 0, opacity: 1, repeat: 1, duration: 0.8, delay: 0, yoyo: true, ease: 'power4.out' });
+	}
 };
