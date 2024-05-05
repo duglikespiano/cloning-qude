@@ -220,3 +220,13 @@ window.onload = () => {
 			0
 		);
 };
+
+//10.loading
+let loading = document.querySelector('.loading');
+let rotateElements = document.querySelectorAll('.rotate');
+let opacityElements = document.querySelectorAll('.opacity');
+setTimeout(() => loading.classList.add('scene1'), 0);
+setTimeout(() => loading.classList.add('scene2'), 1500);
+setTimeout(() => loading.classList.remove('scene1', 'scene2'), 2500);
+setTimeout(() => rotateElements.forEach((element) => element.classList.add('on')), 2500);
+setTimeout(() => opacityElements.forEach((element) => element.classList.add('on')), 2500);

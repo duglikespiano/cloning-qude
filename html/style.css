@@ -799,6 +799,84 @@ footer .logoWrap span img {
 	width: 100%;
 }
 
+/* Loading */
+.loading {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100vh;
+	left: 0;
+	top: 0;
+	background-color: #141212;
+	z-index: 10;
+}
+
+.loading .logo {
+	position: absolute;
+	display: flex;
+	width: 200px;
+	left: 50%;
+	top: 50%;
+	justify-content: space-between;
+	transform: translate(-50%, -50%);
+	overflow: hidden;
+}
+
+.loading .logo span {
+	display: block;
+	padding: 0 1px;
+}
+
+.loading .logo span img {
+	width: 100%;
+}
+
+.loading.scene1 {
+	display: block;
+}
+
+.loading.scene1 .logo span {
+	animation: up 1s;
+}
+
+.loading.scene2 .logo span:nth-child(1) {
+	opacity: 0;
+	transition: 0.1s;
+}
+
+.loading.scene2 .logo span:nth-child(2) {
+	opacity: 0;
+	transition: 0.3s;
+}
+
+.loading.scene2 .logo span:nth-child(3) {
+	opacity: 0;
+	transition: 0.5s;
+}
+
+.loading.scene2 .logo span:nth-child(4) {
+	opacity: 0;
+	transition: 0.6s;
+}
+
+.loading.scene2 .logo span:nth-child(5) {
+	opacity: 0;
+	transition: 0.7s;
+}
+
+.loading.scene2 .logo span:nth-child(6) {
+	opacity: 0;
+	transition: 0.8s;
+}
+
+.rotate.on {
+	animation: rotate 1.2s;
+}
+
+.opacity.on {
+	animation: fadeIn 2s;
+}
+
 @keyframes opa {
 	0% {
 		opacity: 0;
@@ -811,5 +889,42 @@ footer .logoWrap span img {
 	}
 	100% {
 		opacity: 0;
+	}
+}
+
+@keyframes up {
+	0% {
+		transform: translateY(30px);
+	}
+	30% {
+		transform: translateY(30px);
+	}
+	100% {
+		transform: translateY(0px);
+	}
+}
+
+@keyframes rotate {
+	0% {
+		transform-origin: 0 0;
+		transform: translate(0px, 100%) rotate(20deg);
+		transition: 1s;
+	}
+	100% {
+		transform-origin: 0 0;
+		transform: translate(0px, 0px) rotate(0deg);
+		transition: 1s;
+	}
+}
+
+@keyframes fadeIn {
+	0% {
+		opacity: 0;
+	}
+	50% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
 	}
 }
