@@ -17,7 +17,7 @@
 - 프로젝트명 : cloning_qude
 - 관련URL1 : https://qude.audio/
 - 관련URL2 : https://www.udemy.com/course/gsap-scrolltrigger-qudeaudio/
-- 기간 : 2024.05.03 - 진행중
+- 기간 : 2024.05.03 - 2024.06.19
 - 인원 : 1인
 - 기술스택 : </br>
   <img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white">

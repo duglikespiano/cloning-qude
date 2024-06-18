@@ -17,7 +17,7 @@
 - Project title : cloning_qude
 - Related URL1 : https://qude.audio/
 - Related URL2 : https://www.udemy.com/course/gsap-scrolltrigger-qudeaudio/
-- Period : May 03 2024 - In progress
+- Period : May 03 2024 - June 19 2024
 - Member(s) : Dug Park
 - Tech stack : </br>
   <img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white">

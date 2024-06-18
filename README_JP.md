@@ -17,7 +17,7 @@
 - Project タイトル: cloning_qude
 - 関連 URL1 : https://qude.audio/
 - 関連 URL2 : https://www.udemy.com/course/gsap-scrolltrigger-qudeaudio/
-- 期間 : 2024.05.03 - 進行中
+- 期間 : 2024.05.03 - 2024.06.19
 - 人員 : 1 人
 - 技術スタック : </br>
   <img src="https://img.shields.io/badge/html-E34F26?style=for-the-badge&logo=html5&logoColor=white">
